@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via láctea</title>
+</head>
+<body>
+    <script>
+        const Planetas = ['Terra', 'Marte', 'Plutão', 'Vênus', 'Júpiter', 'Saturno'];
+        var Resposta = prompt("Informe um planeta.");
+        var planetaEncontrado = false;
+        for(let i=0;i<=6;i++){
+            if(Resposta===Planetas[i]){
+                planetaEncontrado = true;
+                break;
+            }
+        }
+        if(planetaEncontrado){
+            console.log("O Planeta que você informou está no Array.");
+        }else{
+            console.log("O Planeta que você informou não está no Array.");
+        }
+    </script>
+</body>
+</html>
